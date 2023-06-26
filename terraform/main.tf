@@ -2,16 +2,20 @@ module "sandbox" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "cambiel+sandboxaft@amazon.com"
-    AccountName               = "sandbox-aft"
+    AccountEmail              = "cambiel+sandboxaft1@amazon.com"
+    AccountName               = "sandbox-aft1"
     ManagedOrganizationalUnit = "Sandbox"
-    SSOUserEmail              = "cambiel+sandboxaft@amazon.com"
-    SSOUserFirstName          = "Sandbox"
-    SSOUserLastName           = "AFT"
+    SSOUserEmail              = "cambiel+sandboxaft1@amazon.com"
+    SSOUserFirstName          = "Sandbox1"
+    SSOUserLastName           = "AFT1"
   }
 
   account_tags = {
     "Learn Tutorial" = "AFT"
+    "Learn Environment" = "DEV"
+    "Learn CostCenter" = "123456"
+    "Lear BUCode" = "ABC003"
+    "Learn Project" = "ControlTower"
   }
 
   change_management_parameters = {
